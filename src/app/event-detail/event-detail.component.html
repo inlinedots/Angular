@@ -1,0 +1,49 @@
+<div class="backButton">
+  <button mat-button class="goBack" (click)="goBack()">GO BACK</button>
+
+  <button
+    *ngIf="event.organizer.url"
+    mat-button
+    class="goBack"
+    (click)="buyClick(event)"
+  >
+    Buy Ticket
+  </button>
+</div>
+<div class="wrapper">
+  <mat-card>
+    <mat-card-title>
+      <h2>{{ event.name | uppercase }} Details</h2>
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{ event.occurrences[0].place.name }}
+      <b>{{ event.occurrences[0].startDate | date: "EEEE, d. MMMM yyyy" }}</b>
+      Price: {{ event.occurrences[0].ticketPriceRange }}
+      <b>Phone:{{ event.occurrences[0].place.telephone }} </b>
+      <i *ngIf="event.occurrences[0].place.email"
+        >e-mail: {{ event.occurrences[0].place.email }}</i
+      >
+    </mat-card-subtitle>
+
+    <mat-card-content [innerHTML]="event.description">
+      {{ event.description }}
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="amg-map-card">
+    <mat-card-title>
+      can't find your way?
+    </mat-card-title>
+
+    <agm-map
+      [zoom]="15"
+      (mapClick)="mapClick(event)"
+      [latitude]="event.occurrences[0].place.latitude"
+      [longitude]="event.occurrences[0].place.longitude"
+    >
+      <agm-marker
+        [latitude]="event.occurrences[0].place.latitude"
+        [longitude]="event.occurrences[0].place.longitude"
+      ></agm-marker>
+    </agm-map>
+  </mat-card>
+</div>

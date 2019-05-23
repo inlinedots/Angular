@@ -1,0 +1,93 @@
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+  .wrapper {
+    width: 99%;
+    margin: auto;
+  }
+  .mat-card {
+    background-color: white;
+    border: 3px solid rgba(0, 255, 179, 0);
+    height: 133px;
+    max-width: 340px;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
+    border-radius: 0;
+  }
+}
+
+/* Portrait */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  .wrapper {
+    width: 99%;
+    margin: auto;
+  }
+  .mat-card {
+    background-color: white;
+    border: 3px solid rgba(0, 255, 179, 0);
+    height: 133px;
+    max-width: 340px;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
+    border-radius: 0;
+  }
+}
+
+/* Landscape */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+  .wrapper {
+    width: 60%;
+    margin: auto;
+  }
+  .mat-card {
+    background-color: white;
+    border: 3px solid rgba(0, 255, 179, 0);
+    height: 133px;
+    max-width: 340px;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
+    border-radius: 0;
+  }
+}
+.backButton {
+  width: 83%;
+  margin: auto;
+  padding: 10px;
+}
+.wrapper {
+  width: 85%;
+  margin: auto;
+}
+.mat-card {
+  color: white;
+  background-color: rgb(5, 161, 182);
+  border: 3px solid rgba(0, 80, 90, 0);
+  height: 140px;
+  width: 370px;
+  overflow: hidden;
+  float: left;
+  margin: 8px;
+  border-radius: 0;
+}
+
+.goBack {
+  color: white;
+  position: relative;
+  padding: 2px 5px;
+  text-decoration: none;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: rgb(3, 14, 19);
+  border-radius: 4px;
+  border: 1px solid rgba(18, 138, 13, 0);
+}
+.goBack button:visited,
+a:link {
+  color: #607d8b;
+}
+.goBack:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+  border: 1px solid rgba(18, 138, 13);
+}

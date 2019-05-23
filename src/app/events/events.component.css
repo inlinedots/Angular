@@ -1,0 +1,124 @@
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+  .wrapper {
+    width: 99%;
+    margin: auto;
+  }
+  .mat-card {
+    background-color: white;
+    border: 3px solid rgba(0, 255, 179, 0);
+    height: 133px;
+    max-width: 340px;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
+    border-radius: 0;
+  }
+}
+
+/* Portrait */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  .wrapper {
+    width: 99%;
+    margin: auto;
+  }
+  .mat-card {
+    background-color: white;
+    border: 3px solid rgba(0, 255, 179, 0);
+    height: 133px;
+    max-width: 340px;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
+    border-radius: 0;
+  }
+}
+
+/* Landscape */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+  .wrapper {
+    width: 60%;
+    margin: auto;
+  }
+  .mat-card {
+    background-color: white;
+    border: 3px solid rgba(0, 255, 179, 0);
+    height: 133px;
+    max-width: 340px;
+    overflow: hidden;
+    float: left;
+    margin: 5px;
+    border-radius: 0;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .wrapper {
+    width: 85%;
+    margin: auto;
+  }
+  .mat-card {
+    background-color: white;
+    border: 3px solid rgba(0, 255, 179, 0);
+    height: 200px;
+    width: 370px;
+    overflow: hidden;
+    float: left;
+    margin: 8px;
+    border-radius: 0;
+  }
+}
+
+.mat-card:hover {
+  border: 3px solid rgb(25, 161, 182);
+  transition: 300ms;
+}
+
+.mat-card-image {
+  object-fit: cover; /*this makes de image in src fit to the size of specified below*/
+  height: 231px;
+}
+
+.mat-card-image:hover {
+  height: 235px;
+  transition: 300ms;
+}
+
+.mat-card-title {
+  position: absolute;
+  height: 58px;
+  min-width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(49, 49, 49),
+    rgba(0, 247, 255, 0.4)
+  );
+  color: white;
+  font-size: 20px;
+  bottom: -5%;
+  left: -0%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-shadow: 1px 1px black;
+}
+.mat-card-subtitle {
+  position: absolute;
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  bottom: 20%;
+  right: 0%;
+  font-size: 20px;
+  color: white;
+}
+
+.date {
+  position: absolute;
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  bottom: 80%;
+  right: 0%;
+  font-size: 20px;
+  color: white;
+}

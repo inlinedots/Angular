@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <mat-card
+    layout-align="center center"
+    *ngFor="let event of events"
+    routerLink="/eventdetail/{{ replaceNumber(event.occurrences[0].event) }}"
+  >
+    <img mat-card-image src="{{ event.image }}" />
+    <mat-card-title>
+      {{ event.name }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{ event.organizer.name }}
+    </mat-card-subtitle>
+  </mat-card>
+</div>
