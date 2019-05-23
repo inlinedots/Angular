@@ -20,7 +20,7 @@ import { OccurencesComponent } from './occurences/occurences.component';
     HttpClientModule,
     MatCardModule,
     AgmCoreModule.forRoot({
-      apiKey: "AIzaSyAOGUltkS5kTzMuAFXkRwxwrrrWZb4mU68"
+      apiKey: "AIzaSxxxxxxxxxXXXXXxxxxxxxxxxxx"
     })
   ],
   providers: [],
